@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Webpage</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <div class="container">
+        <h3>Interactive Webpage Example</h3>
+  <!-- Form with Validation -->
+        <h4>Form Validation</h4>
+        <form id="myForm" onsubmit="return validateForm()">
+            <label for="name">Name:</label>
+            <input type="text" id="name">
+            <label for="email">Email:</label>
+            <input type="email" id="email">
+            <input type="submit" value="Submit">
+        </form>
+
+        <!-- Interactive Menu -->
+        <h2>Interactive Menu</h2>
+        <button onclick="toggleMenu()">Toggle Menu</button>
+        <ul id="menu" style="display:none;">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+
+        <!-- Dynamic Content Update -->
+        <h2>Dynamic Content Update</h2>
+        <button onclick="loadContent()">Load Content</button>
+        <div id="content"></div>
+
+        <button onclick="loadData()">Get Data</button>
+        <div id="data"></div>
+    </div>
+
+   <script src="script.js"></script>
+</body>
+</html>    
+        
